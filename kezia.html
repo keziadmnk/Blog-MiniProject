@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kezia - Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 bg-orange-400">
+    <nav class="bg-[#C24E14] shadow-lg text-white fixed w-full top-0 z-50">
+      <div
+        class="container mx-auto px-8 flex justify-between items-center py-4"
+      >
+        <h1 class="text-2xl font-bold tracking-wide">Kezia's Profile</h1>
+        <ul class="hidden md:flex space-x-8 text-lg">
+          <li>
+            <a href="/home.html" class="hover:text-gray-300 transition">Home</a>
+          </li>
+          <li>
+            <a href="#aboutme" class="hover:text-gray-300 transition"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a href="#sharing" class="hover:text-gray-300 transition"
+              >Sharing</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-gray-300 transition">Skills</a>
+          </li>
+          <li>
+            <a href="#portofolio" class="hover:text-gray-300 transition"
+              >Portofolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-gray-300 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="flex justify-center pt-28 items-center">
+      <div
+        class="w-11/12 max-w-400 bg-cover bg-center text-center text-white rounded-xl shadow-lg p-32"
+        style="background-image: url('/img/orange-background.webp')"
+      >
+        <h1 class="text-6xl font-bold">Halo Semuanya, Aku Kezia! 👋</h1>
+        <p class="mt-2 text-lg">Anak kuliahan yang cape kuliah hehe</p>
+      </div>
+    </header>
+
+    <section id="aboutme" class="flex justify-center py-12">
+      <div class="w-11/12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div
+          class="p-12 rounded-t-full shadow-lg flex justify-center items-center text-white"
+          style="
+            background-image: url('/img/orange-background.webp');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <img
+            src="/img/kezia.jpg"
+            alt="Kezia's Profile"
+            class="w-84 h-84 object-cover rounded-t-full border-8 border-[#C24E14]"
+          />
+        </div>
+
+        <div
+          class="p-12 rounded-t-full shadow-lg text-white"
+          style="
+            background-image: url('/img/orange-background.webp');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="bg-[#C24E14] p-16 pt-24 rounded-t-full">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p class="text-justify mt-4 mb-12 text-lg">
+              Halo! Aku Kezia, mahasiswi yang selalu ingin belajar hal baru.
+              Saat ini aku sedang menempuh pendidikan SI Sistem Informasi
+              Universitas Andalas semester keempat. Aku tertarik dengan
+              pemrograman web, desain, dan eksplorasi dunia digital. Saat ini
+              sedang memperdalam skill dalam HTML, CSS, JavaScript, dan beberapa
+              framework lainnya.
+            </p>
+            <p class="mt-4 text-lg">
+              Selain itu, aku juga suka berbagi pengalaman dan membangun
+              proyek-proyek kecil untuk mengasah kemampuan. Let's learn and grow
+              together! asikkk!🚀
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="p-12 rounded-t-full shadow-lg text-white"
+          style="
+            background-image: url('/img/orange-background.webp');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="bg-[#C24E14] p-16 pt-24 rounded-t-full">
+            <h2 class="text-3xl font-bold text-center">Riwayat Pendidikan</h2>
+
+            <div class="mt-4 space-y-4 text-center">
+              <div class="bg-white text-[#C24E14] p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">SMP</h3>
+                <p class="text-lg">SMP Maria Padang | Tahun 2017-2020</p>
+              </div>
+
+              <div class="bg-white text-[#C24E14] p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">SMA</h3>
+                <p class="text-lg">
+                  SMA Negeri 1 Padang | Jurusan MIPA | Tahun 2020-2023
+                </p>
+              </div>
+
+              <div class="bg-white text-[#C24E14] p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Perguruan Tinggi</h3>
+                <p class="text-lg">
+                  Universitas Andalas | Sistem Informasi | Semester 4
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="sharing"
+      class="flex justify-center items-center bg-orange-400 pb-12"
+    >
+      <div
+        class="w-11/12 max-w-screen-lg bg-cover bg-center text-center text-white rounded-xl shadow-lg p-20"
+        style="
+          background-image: url('/img/orange-background.webp');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h2 class="text-3xl font-bold">Sharing</h2>
+        <p class="mt-4 text-white text-xl">
+          Kenal aku lewat funfact tentang aku dijamin fun!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+          >
+            <img
+              src="/img/panic.jpg"
+              alt="Random Image"
+              class="rounded-full w-40 h-40 border-4 border-[#C24E14]"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">Panic Attack</h3>
+              <p class="mt-2 text-gray-700">Aku anaknya panikan hehe</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+          >
+            <img
+              src="/img/piano.jpg"
+              alt="Random Image"
+              class="rounded-full w-40 h-40 border-4 border-[#C24E14]"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Suka Main Musik Pake Banget
+              </h3>
+              <p class="mt-2 text-gray-700">
+                Aku suka main piano, keyboard, gitar, doain drum nyusul.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+          >
+            <img
+              src="/img/multitasking.jpg"
+              alt="Random Image"
+              class="rounded-full w-40 h-40 border-4 border-[#C24E14]"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Gabisa Multi-Tasking
+              </h3>
+              <p class="mt-2 text-gray-700">
+                Puh tutorin gue cara multi-tasking dong, tks
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+          >
+            <img
+              src="/img/yupi.jpg"
+              alt="Random Image"
+              class="rounded-full w-40 h-40 border-4 border-[#C24E14]"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Yupi Terenak Sejagat Raya
+              </h3>
+              <p class="mt-2 text-gray-700">
+                Yang paling enak itu yupi neon-stick no debat
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+          >
+            <img
+              src="/img/durian.jpeg"
+              alt="Random Image"
+              class="rounded-full w-40 h-40 border-4 border-[#C24E14]"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Cinta Mati Sama Durian
+              </h3>
+              <p class="mt-2 text-gray-700">
+                Durian sampe akhir hayat, gila enak banget no koma
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+          >
+            <img
+              src="/img/monolog.jpg"
+              alt="Random Image"
+              class="rounded-full w-40 h-40 border-4 border-[#C24E14]"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Suka Monolog sama Diri Sendiri
+              </h3>
+              <p class="mt-2 text-gray-700">
+                Monolog dadakan waktu berkendara, mau bobo, pas bengong, pas
+                makan hehe emg freak
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="flex justify-center">
+      <div
+        class="w-10/12 max-w-screen-lg bg-cover bg-center text-center text-white rounded-xl shadow-lg p-20"
+        style="background-image: url('/img/orange-background.webp')"
+      >
+        <h2 class="text-3xl font-bold mb-8">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span
+            class="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold"
+            >HTML</span
+          >
+          <span
+            class="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold"
+            >CSS</span
+          >
+          <span
+            class="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold"
+            >JavaScript</span
+          >
+          <span
+            class="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold"
+            >Tailwind CSS</span
+          >
+          <span
+            class="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold"
+            >Figma</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="portofolio" class="flex justify-center py-12">
+      <div
+        class="w-10/12 max-w-screen-lg bg-cover bg-center text-center text-white rounded-xl shadow-lg p-20"
+        style="background-image: url('/img/orange-background.webp')"
+      >
+        <h2 class="text-4xl font-bold">Portfolio</h2>
+        <p class="mt-2 text-lg">Ini rekap portofolio aku!</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <h3 class="text-xl font-semibold">Back-end Development</h3>
+            <p class="mt-2 text-gray-700">bikin laper level 5</p>
+          </div>
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <h3 class="text-xl font-semibold">UI/UX Prototyping</h3>
+            <p class="mt-2 text-gray-700">ga bikin laper</p>
+          </div>
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <h3 class="text-xl font-semibold">Front-end Development</h3>
+            <p class="mt-2 text-gray-700">Bikin laper level 2</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="pb-12 flex justify-center items-center">
+      <div
+        class="w-10/12 max-w-screen-lg bg-cover bg-center text-center text-white rounded-xl shadow-lg p-20"
+        style="background-image: url('/img/orange-background.webp')"
+      >
+        <h2 class="text-3xl font-bold">Contact</h2>
+        <h3>Kirim Kesan Pesanmu ke aku dan aku akan segera membalasnya!</h3>
+
+        <form
+          action="https://formspree.io/f/xzzevlwp"
+          method="POST"
+          class="mt-8 max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="w-full p-3 rounded-md border mb-4 text-black"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="w-full p-3 rounded-md border mb-4 text-black"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="w-full p-3 rounded-md border mb-4 text-black"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition"
+          >
+            Send
+          </button>
+        </form>
+
+        <div class="mt-8">
+          <h3 class="text-2xl font-semibold">
+            Tekan media sosial di bawah untuk menghubungi saya!
+          </h3>
+          <div class="flex justify-center gap-6 mt-4 text-lg">
+            <a
+              href="https://wa.me/6285265254689"
+              class="flex items-center gap-2 hover:text-gray-300 transition"
+            >
+              📞 WhatsApp
+            </a>
+            <a
+              href="https://instagram.com/keziadmnk"
+              class="flex items-center gap-2 hover:text-gray-300 transition"
+            >
+              📸 Instagram
+            </a>
+            <a
+              href="www.linkedin.com/in/kezia-valerina-damanik"
+              class="flex items-center gap-2 hover:text-gray-300 transition"
+            >
+              💼 LinkedIn
+            </a>
+            <a
+              href="https://youtube.com/@keziavalerina"
+              class="flex items-center gap-2 hover:text-gray-300 transition"
+            >
+              🎥 YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#C24E14] text-white py-6 text-center">
+      &copy; 2025 Kezia | All Rights Reserved
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Group 4's Blog</title>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <nav class="bg-[#C24E14] shadow-lg text-white fixed w-full top-0 z-50">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <h1 class="text-2xl font-bold tracking-wide">Group 4's Blog</h1>
+          <ul class="hidden md:flex space-x-8 text-lg">
+            <li>
+              <a
+                href="/home.html"
+                class="hover:text-gray-300 transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <button
+                id="dropdown-button"
+                class="hover:text-gray-300 transition duration-300 focus:outline-none"
+              >
+                Members ▾
+              </button>
+              <ul
+                id="dropdown-menu"
+                class="absolute left-0 w-40 mt-2 bg-white text-black shadow-lg rounded-lg hidden"
+              >
+                <li>
+                  <a href="kezia.html" class="block px-4 py-2 hover:bg-gray-200"
+                    >Kezia</a
+                  >
+                </li>
+                <li>
+                  <a href="nayla.html" class="block px-4 py-2 hover:bg-gray-200"
+                    >Nayla</a
+                  >
+                </li>
+                <li>
+                  <a href="hasbi.html" class="block px-4 py-2 hover:bg-gray-200"
+                    >Hasbi</a
+                  >
+                </li>
+                <li>
+                  <a href="hakim.html" class="block px-4 py-2 hover:bg-gray-200"
+                    >Hakim</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a
+                href="#about"
+                class="hover:text-gray-300 transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="hover:text-gray-300 transition duration-300"
+                >Testimonial</a
+              >
+            </li>
+          </ul>
+
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="white"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden bg-[#A43F10] md:hidden text-white py-4"
+      >
+        <ul class="flex flex-col items-center space-y-4 text-lg">
+          <li>
+            <a href="#" class="hover:text-gray-300 transition duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300 transition duration-300"
+              >Members</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300 transition duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300 transition duration-300"
+              >Media</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      const dropdownButton = document.getElementById("dropdown-button");
+      const dropdownMenu = document.getElementById("dropdown-menu");
+
+      dropdownButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          !dropdownButton.contains(event.target) &&
+          !dropdownMenu.contains(event.target)
+        ) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+    </script>
+
+    <section class="pt-28 bg-orange-400 text-center">
+      <h1 class="text-6xl font-bold">Welcome to Group 4's Blog</h1>
+      <p class="mt-2 text-lg">
+        Discover our amazing members and their stories.
+      </p>
+    </section>
+
+    <section class="flex justify-center pt-12 items-center bg-orange-400">
+      <div
+        class="w-10/12 max-w-400 bg-cover bg-center text-center text-white rounded-xl shadow-lg p-20"
+        style="background-image: url('/img/orange-background.webp')"
+      >
+        <h2 class="text-4xl font-bold">Get to Know Our Members</h2>
+        <p class="mt-2 text-lg">Tekan Salah Satu Card untuk Mengenal Lebih Dekat!</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          <a
+            href="kezia.html"
+            class="bg-stone-100 p-4 px-12 pt-8 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <img
+              src="/img/profil5.jpg"
+              alt="Kezia's Card"
+              class="rounded-t-full mx-auto w-60 h-60"
+            />
+            <h3 class="mt-4 text-xl font-semibold">
+              Kezia <br />
+              2311522010
+            </h3>
+          </a>
+
+          <a
+            href="nayla.html"
+            class="bg-stone-100 p-4 px-12 pt-8 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <img
+              src="/img/profil2.jpg"
+              alt="Nayla's Card"
+              class="rounded-t-full mx-auto w-60 h-60"
+            />
+            <h3 class="mt-4 text-xl font-semibold">
+              Nayla <br />
+              2311521006
+            </h3>
+          </a>
+
+          <a
+            href="hasbi.html"
+            class="bg-stone-100 p-4 px-12 pt-8 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <img
+              src="/img/profil3.jpg"
+              alt="Hasbi's Card"
+              class="rounded-t-full mx-auto w-60 h-60"
+            />
+            <h3 class="mt-4 text-xl font-semibold">
+              Hasbi <br />
+              231152
+            </h3>
+          </a>
+
+          <a
+            href="hakim.html"
+            class="bg-stone-100 p-4 px-12 pt-8 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <img
+              src="/img/profil4.jpg"
+              alt="Hakim's Card"
+              class="rounded-t-full mx-auto w-60 h-60"
+            />
+            <h3 class="mt-4 text-xl font-semibold">
+              Hakim <br />
+              2311
+            </h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="flex justify-center items-center pt-20 bg-orange-400"
+    >
+      <div
+        class="w-10/12 max-w-400 bg-cover bg-center text-center text-white rounded-xl shadow-lg p-20"
+        style="background-image: url('/img/orange-background.webp')"
+      >
+        <h2 class="text-4xl font-bold">Tentang Pemrograman Web</h2>
+        <p class="mt-2 text-lg">Mata kuliah SI Unand Semester 4</p>
+
+        <div class="grid grid-cols-1 gap-6 mt-8">
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <h3 class="text-xl font-semibold">Apa Itu Pemrograman Web?</h3>
+            <p class="mt-2 text-gray-700">
+              Pemrograman web adalah bidang studi yang mempelajari tentang
+              pembangunan situs web yang interaktif dan dinamis dan berfokus
+              menggunakan HTML, CSS, & JavaScript.
+            </p>
+          </div>
+
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <h3 class="text-xl font-semibold">Mengapa Harus Mempelajarinya?</h3>
+            <p class="mt-2 text-gray-700">
+              Mata kuliah ini membantu mahasiswa mengembangkan keterampilan
+              nyata dalam pengembangan web, mencakup aspek frontend dan backend.
+            </p>
+          </div>
+
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg hover:shadow-2xl text-black"
+          >
+            <h3 class="text-xl font-semibold">
+              Bagaimana Blog Website Ini Berhubungan?
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Proyek ini merupakan implementasi dari pembelajaran kami,
+              menerapkan prinsip desain dan logika pemrograman.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="testimonials"
+      class="flex justify-center items-center py-20 bg-orange-400"
+    >
+      <div
+        class="w-10/12 max-w-400 bg-cover bg-center text-white rounded-xl shadow-lg p-20"
+        style="background-image: url('/img/orange-background.webp')"
+      >
+        <h2 class="text-4xl font-bold text-center">
+          Testimonials & Experiences
+        </h2>
+        <p class="mt-2 text-lg text-center">
+          What our members say about Web Programming.
+        </p>
+
+        <div class="flex flex-col gap-8 mt-12">
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg text-black text-center"
+          >
+            <img
+              src="/img/profil5.jpg"
+              alt="Kezia"
+              class="w-24 h-24 mx-auto rounded-full shadow-lg"
+            />
+            <p class="text-gray-700 italic mt-4">
+              "Pweb menyenangkan tapi bikin cepet laper. Harus nyetok banyak
+              cemilan!"
+            </p>
+            <h3 class="mt-4 text-xl font-semibold">— Kezia, 2025</h3>
+          </div>
+
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg text-black text-center"
+          >
+            <img
+              src="/img/profil2.jpg"
+              alt="Nayla"
+              class="w-24 h-24 mx-auto rounded-full shadow-lg"
+            />
+            <p class="text-gray-700 italic mt-4">
+              "Belajar pemrograman web benar-benar membuka wawasan saya tentang
+              teknologi. Sekarang saya bisa membuat website sendiri!"
+            </p>
+            <h3 class="mt-4 text-xl font-semibold">— Nayla, 2025</h3>
+          </div>
+
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg text-black text-center"
+          >
+            <img
+              src="/img/profil3.jpg"
+              alt="Hasbi"
+              class="w-24 h-24 mx-auto rounded-full shadow-lg"
+            />
+            <p class="text-gray-700 italic mt-4">
+              "Mata kuliah ini membantu saya memahami bagaimana website bekerja,
+              dari desain hingga backend."
+            </p>
+            <h3 class="mt-4 text-xl font-semibold">— Hasbi, 2025</h3>
+          </div>
+
+          <div
+            class="bg-stone-100 p-6 rounded-lg shadow-lg text-black text-center"
+          >
+            <img
+              src="/img/profil4.jpg"
+              alt="Hakim"
+              class="w-24 h-24 mx-auto rounded-full shadow-lg"
+            />
+            <p class="text-gray-700 italic mt-4">
+              "Saya suka bagaimana konsep teori langsung diterapkan dalam proyek
+              nyata. Membantu saya lebih siap menghadapi industri!"
+            </p>
+            <h3 class="mt-4 text-xl font-semibold">— Hakim, 2025</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#C24E14] text-white py-10">
+      <div class="container mx-auto px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+        >
+          <div>
+            <h2 class="text-2xl font-bold">About This Website</h2>
+            <p class="mt-2 text-gray-200">
+              Website ini dibuat sebagai bagian dari implementasi mata kuliah
+              Pemrograman Web. Menggunakan HTML, CSS, Tailwind, dan JavaScript
+              sebagai praktik pembelajaran.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold">Quick Links</h2>
+            <ul class="mt-2 space-y-2">
+              <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+              <li>
+                <a href="members.html" class="hover:text-gray-300">Members</a>
+              </li>
+              <li><a href="#about" class="hover:text-gray-300">About</a></li>
+              <li>
+                <a href="#testimonials" class="hover:text-gray-300"
+                  >Testimonial</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold">Follow Us on Instagram</h2>
+            <ul class="mt-2 space-y-2">
+              <li>
+                <a href="index.html" class="hover:text-gray-300">keziadmnk</a>
+              </li>
+              <li>
+                <a href="members.html" class="hover:text-gray-300"
+                  >naylathahira</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-gray-300">mhd.hasbi</a>
+              </li>
+              <li>
+                <a href="#testimonials" class="hover:text-gray-300">hakim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 text-center text-gray-300 text-sm">
+          &copy; 2025 Group 4 | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
